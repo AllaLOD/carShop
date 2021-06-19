@@ -1,0 +1,152 @@
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(voitures/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+}
+#nav_titre {
+    padding-top: 3vh;
+    display: flex;
+    align-items: center;
+
+}
+.cont {
+    display: flex;
+    justify-content:center;
+    padding:10px;       
+}
+.cont_input {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+    padding: 5px;
+}
+
+
+.far ,.fas{color:#e5e5e5;}
+
+input{
+    background-color: #e5e5e5;    
+    color: black;
+    border-radius: 3px;
+}
+.input {
+    display: flex;
+}
+
+select {
+    width: 28px;
+}
+
+
+
+a {
+    color: #343a40;
+    text-decoration: none;
+}
+#titre_t {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+.titre {
+    color: white;
+    text-align: center;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+}
+#voiture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.selection {
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+} 
+.but {
+    background-color: #20c997;
+    border-radius: 3px;
+}
+.but_cont{
+    background-color: #20c997;
+    border-radius: 3px;
+
+}
+
+
+@media only screen and (max-width:1200px){
+
+    .cont {
+        flex-wrap: wrap;
+    }
+    .cont_input {
+        width: 100%;
+    }
+    .but_cont {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .cont {
+        flex-wrap: wrap;
+    }
+    .cont_input{
+        width: 100%;
+    }
+    .but_cont {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:650px){
+
+    header {
+        height: 70vh;
+    }
+
+    .cont {
+    
+        flex-direction: column;
+    }
+    .cont_input {
+        flex-direction: column;
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    .fas {
+        width: 28px;
+    }
+
+}
+
